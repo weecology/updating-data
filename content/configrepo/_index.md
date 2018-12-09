@@ -1,10 +1,11 @@
----
-title: "Configure the Repository"
-date: 2018-12-07T22:12:49-05:00
-draft: true
----
++++
+title = "Configure the Repository"
+date = 2018-12-08T18:38:38-05:00
+weight = 2
+pre = "<b>2. </b>"
++++
 
-1. In the root directory of the repository open the `config.yml` file
+1. In the root directory of the repository open the *config.yml* file
 2. Change the repo name to that for your project. This should be the GitHub user
    or organization name followed by the repository name. You can get this by
    removing the "https://github.com/" from the url for your repository.

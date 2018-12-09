@@ -1,8 +1,8 @@
 +++
 title = "Connect to Zenodo"
 date = 2018-12-08T18:38:38-05:00
-weight = 2
-pre = "<b>2. </b>"
+weight = 3
+pre = "<b>3. </b>"
 +++
 
 1. In a browser go to https://zenodo.org/

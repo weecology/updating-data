@@ -1,8 +1,8 @@
 +++
 title = "Add Data Code"
 date = 2018-12-08T18:38:38-05:00
-weight = 5
-pre = "<b>5. </b>"
+weight = 6
+pre = "<b>6. </b>"
 +++
 
 1. Add any packages that your data cleaning and manipulation requires to

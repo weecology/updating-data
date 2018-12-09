@@ -1,8 +1,8 @@
 +++
 title = "Connect to Travis"
 date = 2018-12-08T18:38:38-05:00
-weight = 3
-pre = "<b>3. </b>"
+weight = 4
+pre = "<b>4. </b>"
 +++
 
 1. Go to https://travis-ci.com/ and click the green button to sign up with GitHub

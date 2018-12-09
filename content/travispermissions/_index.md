@@ -1,8 +1,8 @@
 +++
 title = "Allow Automated Updating"
 date = 2018-12-08T18:38:38-05:00
-weight = 4
-pre = "<b>4. </b>"
+weight = 5
+pre = "<b>5. </b>"
 +++
 
 This set of steps creates a "Personal Access Token" that works like a password
