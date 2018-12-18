@@ -24,8 +24,10 @@ pre: "<b>7. </b>"
   })
   ```
 
-2. Add, commit, push, and double-check that your changes are now on GitHub.
+2. Add, commit, push, and double-check that your changes are now on GitHub:
+
+![Screenshot of test on GitHub](/static/screenshots/github_add_test.png)
 
 3. Travis will automatically run your tests. If there are errors, the build will fail. Check to see that your tests have passed:
 
-[screenshot of passing]
+![Screenshot of Travis passing](/static/screenshots/travis-add-test-passed.png)
