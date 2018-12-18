@@ -31,9 +31,9 @@ pre: "<b>6. </b>"
 3. Check and see if everything is working properly:
 
   * Your new data is now in your repo on GitHub (go to www.github.com/YOUR_USERNAME/livedat-template/data)
-    ![Screenshot of data.csv](/screenshots/github-add-data.png)
+    ![Screenshot of data.csv](/static/screenshots/github-add-data.png)
   * Travis is running or has completed
-    ![Screenshot of Travis passing](/screenshots/travis-add-data-passed.png)
+    ![Screenshot of Travis passing](/static/screenshots/travis-add-data-passed.png)
 
   * Your data is on Zenodo (go to )
     _add a zenodo release?_
