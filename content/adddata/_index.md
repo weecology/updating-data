@@ -26,13 +26,14 @@ pre: "<b>6. </b>"
   This is a subset of the Portal rodent abundance data, from sampling period 27 until sampling period 36. The two-letter column names stand for rodent species.
 
 
-2. Save your changes, commit, and push to GitHub.
+2. Add, commit, and push your changes to GitHub.
 
 3. Check and see if everything is working properly:
 
   * Your new data is now in your repo on GitHub (go to www.github.com/YOUR_USERNAME/livedat-template/data)
-    [GIT SCREENSHOT]
+    ![Screenshot of data.csv](/screenshots/github-add-data.png)
   * Travis is running or has completed
-    [TRAVIS SCREENSHOT]
+    ![Screenshot of Travis passing](/screenshots/travis-add-data-passed.png)
+
   * Your data is on Zenodo (go to )
-    [ZENODO SCREENSHOT]
+    _add a zenodo release?_
