@@ -7,9 +7,25 @@ pre: "<b>7. </b>"
 
 1. Modify the .R scripts in the `testthat` folder to automatically check your data for errors.
 
-  For example, copy this script into `testthat/test-periods.R`. It will automatically make sure that the sampling period values in your data are plausible.
+  For example, copy [this script](/static/sample-scripts/test-periods.R) into `testthat/test-periods.R`. It will automatically make sure that the sampling period values in your data are plausible.
 
+  ```
+  library(testthat)
+  library(dplyr)
+  context("checks that period values are valid")
 
-  [DATA CHECKING FUNCTION]
+  base_data <- read.csv('../data/rodent_abundance.csv',
+                        stringsAsFactors = F)
+
+  test_that("period numbers are valid", {
+
+    expect_true(all(base_data$period < 1000))
+
+  })
+  ```
 
 2. Add, commit, push, and double-check that your changes are now on GitHub.
+
+3. Travis will automatically run your tests. If there are errors, the build will fail. Check to see that your tests have passed:
+
+[screenshot of passing]
