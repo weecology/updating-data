@@ -28,22 +28,32 @@ pre: "<b>8. </b>"
 
 2. Add, commit, and push your changes.
 
-3. Check that your changes are on GitHub and that your tests are passing. (It may take a few moments for your checks to run)
+3. Check that your changes are on GitHub and that your tests are passing on Travis. (It may take a few moments for your checks to run).
 
-[SCREEN SHOT OF FAILED TEST]
+  ![Screenshot of failed Travis build](/static/screenshots/travis-update-data-failed.png)
 
-The data we just added caused the tests to fail! Specifically,
+  The data we just added caused the tests to fail! Specifically, the period values contain an error.
 
-[the specific error]
+  ![Screenshot of failed Travis log](/static/screenshots/travis-failed-test.png)
 
-4. Fix the error in the new data.
+4. Let's open our data in R to find the lines with the error.
 
-    You could fix it manually in a text editor, or using R:
+  ```{r}
+  rodent_data <- read.csv('data/data.csv')
+  rodent_data[ which(rodent_data$period > 1000), ]
+  ```
 
-    [code to fix error manually]
+  On line 20, the period is `4620`. Correct this to `462` and re-save the data:
+
+  ```{r}
+  rodent_data$period[20] <- 462
+
+  write.csv(rodent_data, 'data/data.csv', row.names = F)
+
+  ```
 
 5. Add, commit, and push your results.
 
-6. Go to GitHub and Zenodo and check that the new data has been added and the tests are all now passing.
+6. Go to GitHub and Travis and check that the new data has been added and the tests are all now passing.
 
-[screenshot of passing tests]
+  ![Screenshot of fixed Travis build](/static/screenshots/travis_fixed_error.png)
