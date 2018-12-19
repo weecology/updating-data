@@ -40,7 +40,11 @@ pre: "<b>8. </b>"
 
   ```{r}
   rodent_data <- read.csv('data/data.csv')
+  
   rodent_data[ which(rodent_data$period > 1000), ]
+  
+    > period BA DM DO DS NA. OL OT PB PE PF PH PI PL PM PP RF RM RO SF SH SO
+20   4620  0 44 24  0   5  1 11  5 10  1  1  0  1  0 92  0  1  1  0  0  0
   ```
 
   On line 20, the period is `4620`. Correct this to `462` and re-save the data:
