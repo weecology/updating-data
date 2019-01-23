@@ -1,11 +1,11 @@
 ---
 date: 2016-04-09T16:50:16+02:00
 title: Update data
-weight: 8
-pre: "<b>8. </b>"
+weight: 9
+pre: "<b>9. </b>"
 ---
 
-1. Time to update your `data` file with new data. Copy [this data](/static/sample-data/new-data.csv) and append it to `data/data.csv` in your repo:
+1. Time to update your `data` file with new data. Copy [this data]( /sample-data/new-data.csv) and append it to `data/data.csv` in your repo:
 
 | period | BA | DM | DO | DS | NA | OL | OT | PB | PE | PF | PH | PI | PL | PM | PP  | RF | RM | RO | SF | SH | SO |
 |--------|----|----|----|----|----|----|----|----|----|----|----|----|----|----|-----|----|----|----|----|----|----|
@@ -30,19 +30,19 @@ pre: "<b>8. </b>"
 
 3. Check that your changes are on GitHub and that your tests are passing on Travis. (It may take a few moments for your checks to run).
 
-  ![Screenshot of failed Travis build](/static/screenshots/travis-update-data-failed.png)
+  ![Screenshot of failed Travis build](/screenshots/travis-update-data-failed.png)
 
   The data we just added caused the tests to fail! Specifically, the period values contain an error.
 
-  ![Screenshot of failed Travis log](/static/screenshots/travis-failed-test.png)
+  ![Screenshot of failed Travis log](/screenshots/travis-failed-test.png)
 
 4. Let's open our data in R to find the lines with the error.
 
   ```{r}
   rodent_data <- read.csv('data/data.csv')
-  
+
   rodent_data[ which(rodent_data$period > 1000), ]
-  
+
     > period BA DM DO DS NA. OL OT PB PE PF PH PI PL PM PP RF RM RO SF SH SO
 20   4620  0 44 24  0   5  1 11  5 10  1  1  0  1  0 92  0  1  1  0  0  0
   ```
@@ -60,4 +60,4 @@ pre: "<b>8. </b>"
 
 6. Go to GitHub and Travis and check that the new data has been added and the tests are all now passing.
 
-  ![Screenshot of fixed Travis build](/static/screenshots/travis_fixed_error.png)
+  ![Screenshot of fixed Travis build](/screenshots/travis_fixed_error.png)
