@@ -16,4 +16,4 @@ Use the GitHub import tool to create a copy of the template repository:
 ![Screenshot of GitHub import page](/screenshots/github_import.png)
 5. After the import is finished (typically a few minutes) navigate to your copy
    of the repository
-6. If you want to work with it locally clone the repository
+6. If you want to work with it on your local machine, you can clone the repository as you would any other.
