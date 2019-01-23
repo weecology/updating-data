@@ -1,9 +1,9 @@
-+++
+---
 date: 2016-04-09T16:50:16+02:00
 title: Update data
 weight: 9
 pre: "<b>9. </b>"
-+++
+---
 
 1. Time to update your `data` file with new data. Copy [this data]( /sample-data/new-data.csv) and append it to `data/data.csv` in your repo:
 
