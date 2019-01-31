@@ -5,9 +5,9 @@ weight: 6
 pre: "<b>6. </b>"
 ---
 
-1. Add the initial version of your data to the `data.csv` file in the `data` folder.
+1. Add the initial version of your data to `data.csv` file in a `data` folder.
 
-  For example, this template has an empty data file at `data/data.csv`. As an example, you can copy [this data](/sample-data/starting-data.csv) into `data.csv` in your copy of the template:
+  For example, you can copy [this data](/sample-data/starting-data.csv) into `data/data.csv` in your copy of   the template:
 
 | period | BA | DM | DO | DS | NA. | OL | OT | PB | PE | PF | PH | PI | PL | PM | PP | RF | RM | RO | SF | SH | SO |
 |--------|----|----|----|----|-----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|
@@ -30,10 +30,9 @@ pre: "<b>6. </b>"
 
 3. Check and see if everything is working properly:
 
-  * Your new data is now in your repo on GitHub (go to www.github.com/YOUR_USERNAME/livedat-template/data)
+  * Your new data are now in your repo on GitHub (go to www.github.com/YOUR_USERNAME/livedat/data)
     ![Screenshot of data.csv](/screenshots/github-add-data.png)
   * Travis is running or has completed
     ![Screenshot of Travis passing](/screenshots/travis-add-data-passed.png)
 
-  * Your data is on Zenodo (go to )
-    _add a zenodo release?_
+  * Your data are on Zenodo

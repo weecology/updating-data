@@ -31,24 +31,24 @@ pre: "<b>9. </b>"
 3. Check that your changes are on GitHub and that your tests are passing on Travis. (It may take a few moments for your checks to run).
 
   ![Screenshot of failed Travis build](/screenshots/travis-update-data-failed.png)
-
+  
   The data we just added caused the tests to fail! Specifically, the period values contain an error.
-
+  
   ![Screenshot of failed Travis log](/screenshots/travis-failed-test.png)
 
 4. Let's open our data in R to find the lines with the error.
 
   ```{r}
   rodent_data <- read.csv('data/data.csv')
-
+  
   rodent_data[ which(rodent_data$period > 1000), ]
-
-    > period BA DM DO DS NA. OL OT PB PE PF PH PI PL PM PP RF RM RO SF SH SO
-20   4620  0 44 24  0   5  1 11  5 10  1  1  0  1  0 92  0  1  1  0  0  0
+  
+  > period BA DM DO DS NA. OL OT PB PE PF PH PI PL PM PP RF RM RO SF SH SO
+  20   4620  0 44 24  0   5  1 11  5 10  1  1  0  1  0 92  0  1  1  0  0  0
   ```
-
+  
   On line 20, the period is `4620`. Correct this to `462` and re-save the data:
-
+  
   ```{r}
   rodent_data$period[20] <- 462
 
