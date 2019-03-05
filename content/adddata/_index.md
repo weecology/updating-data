@@ -5,9 +5,7 @@ weight: 6
 pre: "<b>6. </b>"
 ---
 
-1. Add the initial version of your data to `data.csv` file in a `data` folder.
-
-  For example, you can copy [this data](/sample-data/starting-data.csv) into `data/data.csv` in your copy of   the template:
+1. Add the initial version of your data to `data.csv` file in a `data` folder. For example, you can copy [this data](/sample-data/starting-data.csv) into `data/data.csv` in your copy of the template:
 
 | period | BA | DM | DO | DS | NA. | OL | OT | PB | PE | PF | PH | PI | PL | PM | PP | RF | RM | RO | SF | SH | SO |
 |--------|----|----|----|----|-----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|
@@ -21,7 +19,6 @@ pre: "<b>6. </b>"
 | 34     | 0  | 23 | 3  | 36 | 9   | 5  | 1  | 0  | 1  | 6  | 0  | 0  | 0  | 0  | 2  | 0  | 0  | 0  | 0  | 0  | 0  |
 | 35     | 0  | 21 | 6  | 30 | 4   | 2  | 4  | 0  | 2  | 3  | 0  | 0  | 0  | 0  | 3  | 0  | 0  | 0  | 0  | 0  | 0  |
 | 36     | 0  | 15 | 6  | 16 | 4   | 1  | 2  | 0  | 2  | 4  | 0  | 0  | 0  | 0  | 1  | 0  | 0  | 0  | 0  | 0  | 0  |
-
 
   This is a subset of the Portal rodent abundance data, from sampling period 27 until sampling period 36. The two-letter column names stand for rodent species.
 

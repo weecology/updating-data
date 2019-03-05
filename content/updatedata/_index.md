@@ -5,7 +5,7 @@ weight: 9
 pre: "<b>9. </b>"
 ---
 
-1. Time to update your `data` file with new data. Copy [this data]( /sample-data/new-data.csv) and append it to `data/data.csv` in your repo:
+Time to update your `data` file with new data. Copy [this data]( /sample-data/new-data.csv) and append it to `data/data.csv` in your repo:
 
 | period | BA | DM | DO | DS | NA | OL | OT | PB | PE | PF | PH | PI | PL | PM | PP  | RF | RM | RO | SF | SH | SO |
 |--------|----|----|----|----|----|----|----|----|----|----|----|----|----|----|-----|----|----|----|----|----|----|
@@ -24,19 +24,16 @@ pre: "<b>9. </b>"
 | 466    | 0  | 42 | 7  | 0  | 6  | 0  | 15 | 6  | 1  | 0  | 1  | 0  | 0  | 0  | 213 | 0  | 0  | 0  | 0  | 0  | 0  |
 | 467    | 0  | 41 | 5  | 1  | 6  | 0  | 26 | 5  | 9  | 0  | 2  | 0  | 1  | 1  | 94  | 0  | 1  | 0  | 0  | 1  | 0  |
 
-  This is more rodent abundance data from Portal, from more recent sampling periods.
+This is more rodent abundance data from Portal, from more recent sampling periods.
 
-2. Add, commit, and push your changes.
+1. Add, commit, and push your changes.
 
-3. Check that your changes are on GitHub and that your tests are passing on Travis. (It may take a few moments for your checks to run).
-
+2. Check that your changes are on GitHub and that your tests are passing on Travis. (It may take a few moments for your checks to run).
   ![Screenshot of failed Travis build](/screenshots/travis-update-data-failed.png)
-  
   The data we just added caused the tests to fail! Specifically, the period values contain an error.
-  
   ![Screenshot of failed Travis log](/screenshots/travis-failed-test.png)
 
-4. Let's open our data in R to find the lines with the error.
+3. Let's open our data in R to find the lines with the error.
 
   ```{r}
   rodent_data <- read.csv('data/data.csv')
@@ -56,8 +53,7 @@ pre: "<b>9. </b>"
 
   ```
 
-5. Add, commit, and push your results.
+4. Add, commit, and push your results.
 
-6. Go to GitHub and Travis and check that the new data has been added and the tests are all now passing.
-
+5. Go to GitHub and Travis and check that the new data has been added and the tests are all now passing.
   ![Screenshot of fixed Travis build](/screenshots/travis_fixed_error.png)
