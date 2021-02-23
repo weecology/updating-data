@@ -1,7 +1,9 @@
-baseURL = "http://example.org/"
+baseURL = "/"
 languageCode = "en-us"
 title = "Updating Data"
 theme = "learn"
+metaDataFormat = "yaml"
+
 [params]
   themeVariant = "green"
 
