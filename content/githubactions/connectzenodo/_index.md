@@ -5,6 +5,8 @@ weight = 3
 pre = "<b>3. </b>"
 +++
 
+**Coming soon: We hope to have GitHub to Zenodo syncing done in the near future!**
+
 1. In a browser go to https://zenodo.org/
 2. If you're new to Zenodo
     1. Click the "Sign Up" button and choose "Sign Up with GitHub"
