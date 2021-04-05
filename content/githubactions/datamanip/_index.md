@@ -5,18 +5,7 @@ weight = 7
 pre = "<b>7. </b>"
 +++
 
-1. Add any packages that your data cleaning and manipulation requires to
-   *p_load* function call in *install-packages.R*. Do not remove any of the
-   packages that are already there.
-
-    ```
-    # Install packages required for analysis
-    # Add any packages required for you data cleaning and manipulation to the
-    # `p_load` function call below
-    # Do not remove the packages already listed here
-    # they are important for running the livedat repository
-
-    pacman::p_load(git2r, httr, semver, yaml, dplyr)
-    ```
+1. Add any packages that your data cleaning and manipulation requires to the `DESCRIPTION` file in your package's root. For example, we've just added the `dplyr` and `tidyr`. Note: Unfortunately you cannot add the `tidyverse` umbrella package as this will cause the package check to fail: you need to install the packages you want to use individually.
+  ![Screenshot of DESCRIPTION file](/screenshots/github_actions_R_CMD_CHECK.png)
 2. Modify *datascript.R* to the code you need for data cleaning and manipulation
 3. Commit and push these changes to your repository
