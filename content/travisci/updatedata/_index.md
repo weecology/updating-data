@@ -5,7 +5,7 @@ weight: 9
 pre: "<b>9. </b>"
 ---
 
-Time to update your `data` file with new data. Copy [this data]( /sample-data/new-data.csv) and append it to `data/data.csv` in your repo:
+Time to update your `data` file with new data which contains a deliberate error for period 462. Copy [this data]( /sample-data/new-data.csv) and append it to `data/data.csv` in your repo:
 
 | period | BA | DM | DO | DS | NA | OL | OT | PB | PE | PF | PH | PI | PL | PM | PP  | RF | RM | RO | SF | SH | SO |
 |--------|----|----|----|----|----|----|----|----|----|----|----|----|----|----|-----|----|----|----|----|----|----|
