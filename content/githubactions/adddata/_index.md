@@ -29,7 +29,6 @@ pre: "<b>6. </b>"
 
   * Your new data are now in your repo on GitHub (go to www.github.com/YOUR_USERNAME/livedat/data)
     ![Screenshot of data.csv](/screenshots/github-add-data.png)
-  * Travis is running or has completed
-    ![Screenshot of Travis passing](/screenshots/travis-add-data-passed.png)
-
-  * Your data are on Zenodo
+  * GitHub Actions is running or has completed
+    ![Screenshot of GitHub Actions passing](/screenshots/github_actions-add-data-passed.png)
+  * **(Coming soon)** Your data are on Zenodo

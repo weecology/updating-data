@@ -10,19 +10,25 @@ pre: "<b>8. </b>"
   ```
   library(testthat)
   library(dplyr)
+  library(readr)
   context("checks that period values are valid")
-
-  base_data <- read.csv('../data/rodent_abundance.csv',
-                        stringsAsFactors = F)
-
+  
+  base_data <- read_csv("../data/data.csv")
+  
   test_that("period numbers are valid", {
-
+  
     expect_true(all(base_data$period < 1000))
-
+  
   })
   ```
-
+2. In `.github/workflows/R-CMD-check.yaml` add the following code at the end of the file
+```
+      - name: Run tests
+        run: Rscript testthat.R
+      - name: Run datascript
+        run: Rscript datascript.R
+```
 2. Add, commit, push, and double-check that your changes are now on GitHub:
   ![Screenshot of test on GitHub](/screenshots/github_add_test.png)
-3. Travis will automatically run your tests. If there are errors, the build will fail. Check to see that your tests have passed:
-  ![Screenshot of Travis passing](/screenshots/travis-add-test-passed.png)
+3. GitHub actions will automatically run your tests. If there are errors, the build will fail. Check to see that your tests have passed:
+  ![Screenshot of Travis passing](/screenshots/github_actions-add-test-passed.png)

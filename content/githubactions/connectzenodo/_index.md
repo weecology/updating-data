@@ -1,12 +1,13 @@
 +++
-title = "Connect to Zenodo"
+title = "Connect to Zenodo (Coming Soon)"
 date = 2018-12-08T18:38:38-05:00
 weight = 3
 pre = "<b>3. </b>"
 +++
 
-**Coming soon: We hope to have GitHub to Zenodo syncing done in the near future!**
+**Coming soon: We hope to have GitHub Actions to Zenodo syncing done in the near future!**
 
+<!--
 1. In a browser go to https://zenodo.org/
 2. If you're new to Zenodo
     1. Click the "Sign Up" button and choose "Sign Up with GitHub"
@@ -17,3 +18,4 @@ pre = "<b>3. </b>"
    address and select "GitHub"   
    ![Screenshot of Zenodo main menu](/screenshots/zenodo_menu.png)
 5. Find your repository in the list and flip the switch to "On"
+-->
