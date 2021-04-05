@@ -5,6 +5,10 @@ weight = 2
 pre = "<b>2. </b>"
 +++
 
+1. Open R.
+1. If you haven't already, install the `usethis` R package.
+1. Run `usethis::use_github_actions()`. This should create a directory called `.github/` as well as a `.Rbuildignore` file. 
+1. Use the attached `DESCRIPTION` file. Ensure there is a "cre"
 1. In the root directory of the repository open the *config.yml* file
 2. Change the repo name to that for your project. This should be the GitHub user
    or organization name followed by the repository name. You can get this by
