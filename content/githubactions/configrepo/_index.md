@@ -5,10 +5,10 @@ weight = 2
 pre = "<b>2. </b>"
 +++
 
-1. Open R.
-1. If you haven't already, install the `usethis` R package.
-1. Run `usethis::use_github_actions()`. This should create a directory called `.github/` as well as a `.Rbuildignore` file. 
-1. Use the attached `DESCRIPTION` file. Ensure there is a "cre"
+1. Open the repo in RStudio by clicking the *.Rproj* file that has the name of your new repository.
+1. If you haven't already, install the *usethis* R package.
+1. Run `usethis::use_github_actions()`. This should create a directory called *.github/* as well as a *.Rbuildignore* file. 
+1. Open the *DESCRIPTION* file. Under *Authors@R* replace Cosme Fulantino's name with yours. Feel free to add an email as well as an ORCID if you like.
 1. In the root directory of the repository open the *config.yml* file
 2. Change the repo name to that for your project. This should be the GitHub user
    or organization name followed by the repository name. You can get this by
@@ -19,3 +19,7 @@ pre = "<b>2. </b>"
    automated. You don't need a GitHub account for this user, this is just the
    name and email that will appear in the commit log.
 4. Commit and push these changes to your GitHub repository.
+
+<!--
+TODO: Fix deploy email and username
+-->
