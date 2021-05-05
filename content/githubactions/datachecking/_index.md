@@ -5,30 +5,32 @@ weight: 8
 pre: "<b>8. </b>"
 ---
 
-1. Modify the .R scripts in the `testthat` folder to automatically check your data for errors. For example, copy [this script](/sample-scripts/test-periods.R) into `testthat/test-periods.R`. It will automatically make sure that the sampling period values in your data are plausible.
 
-  ```
-  library(testthat)
-  library(dplyr)
-  library(readr)
-  context("checks that period values are valid")
-  
-  base_data <- read_csv("../data/data.csv")
-  
-  test_that("period numbers are valid", {
-  
-    expect_true(all(base_data$period < 1000))
-  
-  })
-  ```
-2. In `.github/workflows/R-CMD-check.yaml` add the following code at the end of the file
-```
-      - name: Run tests
-        run: Rscript testthat.R
-      - name: Run datascript
-        run: Rscript datascript.R
-```
-2. Add, commit, push, and double-check that your changes are now on GitHub:
-  ![Screenshot of test on GitHub](/screenshots/github_add_test.png)
-3. GitHub actions will automatically run your tests. If there are errors, the build will fail. Check to see that your tests have passed:
-  ![Screenshot of Travis passing](/screenshots/github_actions-add-test-passed.png)
+1. Modify the .R scripts in the `testthat` folder to automatically check your data for errors. For example, copy [this script](/sample-scripts/test-periods-ga.R) into `testthat/test-periods-ga.R`. It will automatically make sure that the sampling period values in your data are plausible.  
+    ```{r}
+    library(testthat)
+    library(dplyr)
+    library(readr)
+    context("Checks that all values in period variable are valid.")
+    
+    base_data <- read_csv("../data-raw/data.csv")
+    
+    test_that(
+      desc = "Period values are valid.",
+      code = {
+        all_period_values_valid <- all(base_data$period < 1000)
+        expect_true(all_period_values_valid)
+      }
+    )
+    ```
+2. In `.github/workflows/R-CMD-check.yaml` add the following code at the end of the file, being once again mindful of the spacing at the beginning of each line
+    ```
+          - name: Run tests
+            run: Rscript testthat.R
+    ```
+2. Add, commit, push, and double-check that your changes are now on GitHub:  
+![Screenshot of test on GitHub](/screenshots/github_actions-github_add_test.png)
+3. GitHub actions will automatically run your tests. If there are errors, the build will fail. Check to see that your tests have passed:  
+![Screenshot of GitHub Actions passing](/screenshots/github_actions-add-test-passed.png)
+
+
