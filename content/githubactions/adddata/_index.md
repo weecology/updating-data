@@ -25,7 +25,7 @@ pre: "<b>6. </b>"
 
 2. Add, commit, and push your changes to GitHub.
 3. Check and see if everything is working properly:
-    + Your new data are now in your repo on GitHub (go to www.github.com/YOUR_USERNAME/livedat/data)  
+    + Your new data are now in your repo on GitHub 
     ![Screenshot of data.csv](/screenshots/github_actions-github-add-data.png)
     + GitHub Actions is running or has completed  
     ![Screenshot of GitHub Actions passing](/screenshots/github_actions-add-data-passed.png)

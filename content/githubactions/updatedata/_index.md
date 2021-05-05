@@ -33,7 +33,7 @@ The data we just added caused the tests to fail! Specifically, the period values
 ![Screenshot of failed GitHub Actions log](/screenshots/github_actions-failed-test.png)
 Let's click Annotations -> R-CMD-check Test failures. 
 ![Screenshot of failed GitHub Actions log](/screenshots/github_actions-failed-test-2.png)
-Under "Run tests" we see that GitHub Actions has ran our tests have failed:
+Under "Run tests" we see that GitHub Actions has ran and is indicating our tests have failed:
     ```
     ══ Failed tests ════════════════════════════════════════════════════════════════
     ── Failure (test-periods-ga.R:12:5): Period values are valid. ──────────────────
