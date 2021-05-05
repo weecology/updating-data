@@ -5,7 +5,7 @@ weight: 6
 pre: "<b>6. </b>"
 ---
 
-1. Add the initial version of your data to `data.csv` file in a `data` folder. For example, you can copy [this data](/sample-data/starting-data.csv) into `data/data.csv` in your copy of the template:
+1. Add the initial version of your data to `data.csv` file in a `data` folder. For example, you can copy [this data](/sample-data/data.csv) into `data/data.csv` in your copy of the template:
 
 | period | BA | DM | DO | DS | NA. | OL | OT | PB | PE | PF | PH | PI | PL | PM | PP | RF | RM | RO | SF | SH | SO |
 |--------|----|----|----|----|-----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|
