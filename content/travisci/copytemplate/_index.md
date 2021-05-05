@@ -1,6 +1,6 @@
 ---
 date: 2016-04-09T16:50:16+02:00
-title: Copy the template repository
+title: Copy the Template Repository
 weight: 1
 pre: "<b>1. </b>"
 ---
