@@ -1,11 +1,11 @@
 ---
 date: 2016-04-09T16:50:16+02:00
-title: Add data
+title: Add Data
 weight: 6
 pre: "<b>6. </b>"
 ---
 
-1. Add the initial version of your data to `data.csv` file in a `data` folder. For example, you can copy [this data](/sample-data/data.csv) into `data/data.csv` in your copy of the template:
+1. Add the initial version of your data to `data.csv` file in a `data-raw/` folder. For example, you can copy [this data](/sample-data/data.csv) into `data-raw/data.csv` in your copy of the template:
 
 | period | BA | DM | DO | DS | NA. | OL | OT | PB | PE | PF | PH | PI | PL | PM | PP | RF | RM | RO | SF | SH | SO |
 |--------|----|----|----|----|-----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|
@@ -24,11 +24,9 @@ pre: "<b>6. </b>"
 
 
 2. Add, commit, and push your changes to GitHub.
-
 3. Check and see if everything is working properly:
-
-  * Your new data are now in your repo on GitHub (go to www.github.com/YOUR_USERNAME/livedat/data)
-    ![Screenshot of data.csv](/screenshots/github-add-data.png)
-  * GitHub Actions is running or has completed
+    + Your new data are now in your repo on GitHub (go to www.github.com/YOUR_USERNAME/livedat/data)  
+    ![Screenshot of data.csv](/screenshots/github_actions-github-add-data.png)
+    + GitHub Actions is running or has completed  
     ![Screenshot of GitHub Actions passing](/screenshots/github_actions-add-data-passed.png)
-  * **(Coming soon)** Your data are on Zenodo
+    + **(Coming soon)** Your data are on Zenodo
