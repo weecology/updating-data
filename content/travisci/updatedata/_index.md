@@ -5,7 +5,7 @@ weight: 9
 pre: "<b>9. </b>"
 ---
 
-Time to update your `data` file with new data. Copy [this data]( /sample-data/new-data.csv) and append it to `data/data.csv` in your repo:
+Time to update your `data` file with new data. Download [this data](/sample-data/new-data.csv) and append it to `data/data.csv` in your repo, being sure not to duplicate the header row:
 
 | period | BA | DM | DO | DS | NA | OL | OT | PB | PE | PF | PH | PI | PL | PM | PP  | RF | RM | RO | SF | SH | SO |
 |--------|----|----|----|----|----|----|----|----|----|----|----|----|----|----|-----|----|----|----|----|----|----|
@@ -44,7 +44,7 @@ This is more rodent abundance data from Portal, from more recent sampling period
   20   4620  0 44 24  0   5  1 11  5 10  1  1  0  1  0 92  0  1  1  0  0  0
   ```
   
-  On line 20, the period is `4620`. Correct this to `462` and re-save the data:
+4.  On line 20, the period is `4620`. Correct this to `462` and re-save the data:
   
   ```{r}
   rodent_data$period[20] <- 462
