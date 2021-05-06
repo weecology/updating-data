@@ -5,7 +5,7 @@ weight: 8
 pre: "<b>8. </b>"
 ---
 
-1. Modify the .R scripts in the `testthat` folder to automatically check your data for errors. GitHub Actions will automatically run any files inside the `testthat` folder. For example, copy [this script](/sample-scripts/test-periods.R) into `testthat/test-periods.R`. It will automatically make sure that the sampling period values in your data are plausible.
+1. Modify the .R scripts in the `testthat` folder to automatically check your data for errors. For example, copy [this script](/sample-scripts/test-periods.R) into `testthat/test-periods.R`. It will automatically make sure that the sampling period values in your data are plausible.
 
   ```
   library(testthat)
