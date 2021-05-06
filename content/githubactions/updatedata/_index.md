@@ -1,8 +1,8 @@
 ---
 date: 2016-04-09T16:50:16+02:00
 title: Update Data
-weight: 9
-pre: "<b>9. </b>"
+weight: 8
+pre: "<b>8. </b>"
 ---
 
 Time to update your `data.csv` file with new data which contains a deliberate error for period 462. Download [this data](/sample-data/new-data.csv) and append it to `data-raw/data.csv` in your repo, being sure not to duplicate the header row:

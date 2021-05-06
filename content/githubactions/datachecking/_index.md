@@ -1,8 +1,8 @@
 ---
 date: 2016-04-09T16:50:16+02:00
 title: Add Data Checks
-weight: 8
-pre: "<b>8. </b>"
+weight: 7
+pre: "<b>7. </b>"
 ---
 
 

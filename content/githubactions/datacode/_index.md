@@ -1,8 +1,8 @@
 +++
 title = "Add Data Code"
 date = 2018-12-08T18:38:38-05:00
-weight = 7
-pre = "<b>7. </b>"
+weight = 6
+pre = "<b>6. </b>"
 +++
 
 1. Add any packages that your data cleaning and manipulation requires to the `DESCRIPTION` file in your package's root. Note: Installing R packages can be slow and so you should only install the specific packages you need, not umbrella packages like `tidyverse` (in fact installing `tidyverse` will cause the system to timeout and therefore fail). For example, we've just added the `dplyr` and `readr` packages:  

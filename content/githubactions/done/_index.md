@@ -1,8 +1,8 @@
 +++
 title = "Keep Collecting Data!"
 date = 2019-01-29T18:38:38-05:00
-weight = 10
-pre = "<b>10. </b>"
+weight = 9
+pre = "<b>9. </b>"
 +++
 
 You're done setting up your data repository! Keep adding new data, and new tests as they become necessary. Be sure to

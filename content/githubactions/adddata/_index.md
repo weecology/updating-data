@@ -1,8 +1,8 @@
 ---
 date: 2016-04-09T16:50:16+02:00
 title: Add Data
-weight: 6
-pre: "<b>6. </b>"
+weight: 5
+pre: "<b>5. </b>"
 ---
 
 1. Add the initial version of your data to `data.csv` file in a `data-raw/` folder. For example, you can copy [this data](/sample-data/data.csv) into `data-raw/data.csv` in your copy of the template:
