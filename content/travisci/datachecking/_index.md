@@ -1,6 +1,6 @@
 ---
 date: 2016-04-09T16:50:16+02:00
-title: Add data checks
+title: Add Data Checks
 weight: 8
 pre: "<b>8. </b>"
 ---
@@ -12,7 +12,7 @@ pre: "<b>8. </b>"
   library(dplyr)
   context("checks that period values are valid")
 
-  base_data <- read.csv('../data/rodent_abundance.csv',
+  base_data <- read.csv('../data/data.csv',
                         stringsAsFactors = F)
 
   test_that("period numbers are valid", {
